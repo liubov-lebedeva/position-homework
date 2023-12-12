@@ -1,10 +1,15 @@
 @import url(reset.css);
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 .container {
     width: 1000px;
     margin: 0 auto;
     padding: 50px 0;
 }
+
 .heading {
     text-transform: capitalize;
     font-size: 2.5rem;
@@ -15,6 +20,7 @@
     padding: 10px;
     border-radius: 6px;
 }
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -51,3 +57,35 @@
 .card:hover > div {
     opacity: 1;
 }
+
+.menu {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    margin-top: -150px;
+    min-width: 150px;
+    height: 300px;
+    background: #080831;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #81A36B;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.btn:hover {
+    background: white;
+    color: #080831;
+}
+
